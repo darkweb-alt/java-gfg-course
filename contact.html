@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Pitambar Yadav</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fas fa-p"></i>
+          <div class="logo-text">Pitambar</div>
+        </div>
+        <nav>
+          <div class="togglebtn" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container" style="flex-direction: column;">
+        <div class="hero-text" style="align-items: center; text-align: center;">
+          <h1>Get in Touch</h1>
+          <p>If you'd like to connect, collaborate, or just say hi — fill the form below or reach out via social links!</p>
+
+          <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn active">Send Message</button>
+          </form>
+
+          <div class="social" style="margin-top: 20px;">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const togglebtn = document.querySelector(".togglebtn");
+    const nav = document.querySelector(".navlinks");
+
+    function toggleMenu(btn) {
+      btn.classList.toggle("click");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

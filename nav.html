@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rebeccapurple;
+            padding: 10px 20px;
+        }
+
+        .logo h2 {
+            color: white;
+        }
+
+        .navlinks ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navlinks ul li {
+            margin: 0 30px;
+        }
+
+        .navlinks ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navlinks ul li a:hover {
+            color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="navbar">
+        <div class="logo">
+            <h2>MyLogo</h2>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>
