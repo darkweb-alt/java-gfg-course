@@ -13,5 +13,11 @@ public class finalluse {
         finally{
             System.out.println("Whatever happened in try and catch block , IDCCC");
         }
+    // System.out.println(div(5, 0));
+    // System
+
+    }
+    static int div(int a, int b) throws ArithmeticException{
+return a/b;
     }
 }
